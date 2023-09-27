@@ -182,10 +182,21 @@ temperatura.</p>
                   <div class="card text-bg-secondary mb-3">
                     <div class="card-body">
                       <h3 align="center">Para quem quiser</h3>
-                      <p>Caso queira tentar replicar esse jogo aqui tem um tutorial: </p>
-                     
-                      <img src="Imagens/Tutorial.jpeg" alt="" id="pov3">
-                      
+                      <p>Caso queira tentar replicar esse jogo aqui tem um tutorial curto: </p>
+                      <p>Primeiro, é preciso sprites, podem ser qualquer coisa, como um simples cubo, e podem ser feitos em qualquer software de edição de imagens, ou o próprio GameMaker. Depois, ao criar um projeto no GameMaker, importe os sprites.</p>
+                      <p>É necessário criar um objeto para o jogador, e pode haver outros, como uma parede ou um inimigo. No objeto do jogador, deve-se adicionar um evento de criação e um de passo:</p>
+                      <p>Na criação:</p> 
+                      <p>hspd=0; //Velocidade horizontal</p>
+                      <p>vspd=0; //Velocidade vertical</p>
+                      <p>jumpspd=16; //Tamanho do pulo</p>
+                      <p>grav=4; //Gravidade</p>
+                      <p>No passo:</p>
+                      <p>var tecla_esq = keyboard_check(vk_left); //Uma variável para checar se a seta esquerda está sendo pressionada</p>
+                      <p>var tecla_dir = keyboard_check(vk_right); //Uma variável para checar se a seta direita está sendo pressionada</p>
+                      <p>var tecla_pulo = keyboard_check_pressed(vk_space); //Uma variável para checar se a barra de espaço está sendo pressionada, sem ser segurada</p>
+                      <p>if tecla_esq hspd = -5; //Checar se a tecla seta esquerda está sendo pressionada, e colocando velocidade se sim</p>
+                      <p>if tecla_esq hspd = 5; //Checar se a tecla seta direita está sendo pressionada, e colocando velocidade se sim</p>
+                      <p>move_and_collide(hspd,vspd,obj_parede) //Movimentar à velocidade horizontal e vertical colidindo copm o objeto da parede</p>
 
                     </div></div> </div>
                 </div>
